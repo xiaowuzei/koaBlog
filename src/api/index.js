@@ -11,5 +11,8 @@ export default {
     },
     login(data){
         return axios.post('/api/login',data)
-    }
+    },
+    createArticle(data){
+        return axios.post('/api/articles', data);
+    },
 }
