@@ -8,5 +8,8 @@ export default {
         return axios.get('/api/hello',{params:{
             username:'get'
         }})
+    },
+    login(data){
+        return axios.post('/api/login',data)
     }
 }
